@@ -18,6 +18,17 @@ header {
   margin: 0 auto;
 }
 
+section {
+  max-width: 1200px;
+  margin: o auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  margin: 0 auto;
+}
+
 header h1 {
   font-weight: 700;
   font-size: 86px;
@@ -53,6 +64,43 @@ header a {
   padding: 16px 32px;
   margin-top: 32px;
   border-radius: 5px;
+}
+
+footer {
+  background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
+    url(/images/color-food.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.9;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
 }
 
 @media (max-width: 1000px) {
