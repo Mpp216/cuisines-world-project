@@ -47,6 +47,10 @@ section {
   padding: 100px;
 }
 
+.section-recipies {
+  padding: 10px;
+}
+
 section.secondary {
   background: #f8f8f8;
 }
