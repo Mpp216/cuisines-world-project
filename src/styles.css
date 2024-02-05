@@ -53,10 +53,12 @@ section.secondary {
 
 .image-responsive {
   width: 100%;
+  display: block;
 }
 
-.secondary.card-header {
-  padding: 10px 20px;
+img {
+  overflow: clip;
+  overflow-clip-margin: content-box;
 }
 
 .grid {
@@ -83,8 +85,8 @@ section.secondary {
   margin: 30px 0;
 }
 
-.card-header {
-  padding: 10px;
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-body {
@@ -93,6 +95,11 @@ section.secondary {
 
 .card-footer {
   padding: 0 30px 30px;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 header h1 {
@@ -244,5 +251,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
